@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+:root {
+    --primary-color: #732439;
+    --secondary-color: #3c4e2f;
+    --text-secondary-color: #bcc9a7;
+    --bg-color: #f2f2f2;
+    --text-color: #281913;
+    --font-family: "Roboto Serif", sans-serif;
+    --header-font-family: "Prompt", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--header-font-family);
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+nav > ul > li > a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav > ul > li.selected > a {
+    color: var(--bg-color);
+    text-decoration: underline;
+}
+
+nav > ul > li > a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    /*max-width: 800px;*/
+    margin: auto;
+    padding: 0 16px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    height: fit-content;
+    height: 400px;
+    justify-content: center;
+}
+
+header section {
+    max-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+}
+
+/*header section p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}*/
+
+header section h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+header img {
+    width: 300px;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+footer {
+    clear: both;
+}
